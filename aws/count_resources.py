@@ -47,7 +47,7 @@ def controller(access, secret, profile):
         except:
             click.echo('Error establishing AWS connection. Likely bad credentials provided.')
             sys.exit()
-
+ 
     # pull the account ID for use when needed for filtering
     iam = session.client('sts')
 
